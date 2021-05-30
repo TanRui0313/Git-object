@@ -1,0 +1,809 @@
+body {
+
+    min-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, .5);
+
+    overflow: hidden;
+    z-index: 2;
+}
+
+.menu__content {
+    position: relative;
+    margin: 17px auto;
+    width: 996px;
+    height: 46px;
+
+}
+
+.menu__title {
+    float: left;
+
+}
+
+.menu__link {
+    display: inline-block;
+    width: 159px;
+    height: 46px;
+    background: url(../images/download_logo.png) 0 0 no-repeat;
+    overflow: hidden;
+}
+
+.menu_nav {
+    float: left;
+}
+
+.menu_nav__item {
+    float: left;
+    margin-left: 80px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu_nav__item--current {
+    color: #2eb574;
+}
+
+.menu__home {
+
+    float: right;
+    margin-left: 27px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 760px;
+
+}
+
+.wrap>ul {
+    position: relative;
+    height: 768px;
+}
+
+.wrap .wrap-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+@keyframes star {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translate3d(0, 0, 0);
+        -webkit-transform: scale(0.5) translate3d(0, 0, 0);
+        -moz-transform: scale(0.5) translate3d(0, 0, 0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translate3d(-200px, 200px, 0);
+        -webkit-transform: translate3d(-200px, 200px, 0);
+        -moz-transform: translate3d(-200px, 200px, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.2) translate3d(-300px, 300px, 0);
+        -webkit-transform: scale(1.2) translate3d(-300px, 300px, 0);
+        -moz-transform: scale(1.2) translate3d(-300px, 300px, 0);
+    }
+}
+
+.mod_banner__star {
+    position: absolute;
+    width: 171px;
+    height: 168px;
+    animation: star 3s both infinite linear;
+    animation-name: star;
+    overflow: hidden;
+}
+
+.mod_banner__star1 {
+    top: 380px;
+    left: 20px;
+    animation-name: star;
+    animation-delay: .3s;
+}
+
+.mod_banner__star2 {
+    top: 320px;
+    right: 100px;
+    animation-delay: 1s;
+}
+
+.mod_banner__star3 {
+    top: 260px;
+    left: 50%;
+    margin-left: 200px;
+
+    animation-delay: 1.4s;
+}
+
+.mod_banner__star4 {
+    top: 200px;
+    left: 50%;
+    margin-left: -200px;
+
+    animation-delay: 2s;
+}
+
+.mod_banner__star5 {
+    top: 640px;
+    left: 50%;
+    margin-left: -400px;
+
+    animation-delay: 2.5s;
+}
+
+.mod_banner__star6 {
+    top: 400px;
+    left: 50%;
+    margin-left: 400px;
+
+    animation-delay: 2.9s;
+}
+
+.mod_banner__star::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 108px;
+    height: 152px;
+    background: url(../images/star.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.wrap-pc {
+
+    background: url(../upload/banner_pc.jpg) no-repeat;
+}
+
+.wrap-mac {
+    display: none;
+    background: url(../images/banner_mac.jpg) 50% no-repeat;
+
+}
+
+.wrap-iphone {
+    display: none;
+    background: url(../images/banner_iphone.jpg) 50% no-repeat;
+}
+
+.wrap-android {
+    display: none;
+    background: url(../images/banner_android.jpg) 50% no-repeat;
+}
+
+.wrap-pc-xiazai {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -294px;
+    margin-top: -180px;
+    width: 587px;
+    height: 145px;
+    text-indent: -99em;
+    overflow: hidden;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: 0 -312px;
+
+}
+
+.wrap-mac-xiazai {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -205px;
+    width: 623px;
+    height: 145px;
+    text-indent: -99em;
+    overflow: hidden;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: 0 0;
+}
+
+.wrap-iphone-xiazai {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -185px;
+    margin-left: -2px;
+    width: 370px;
+    height: 159px;
+    text-indent: -99em;
+    overflow: hidden;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: -636px -323px;
+}
+
+.wrap-android-xiazai {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -195px;
+    width: 520px;
+    height: 149px;
+    text-indent: -99em;
+    overflow: hidden;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: -636px 0;
+    z-index: 3;
+}
+
+.wrap_item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 20px;
+    margin-left: -152px;
+    width: 293px;
+    height: 69px;
+    text-indent: -99em;
+    overflow: hidden;
+
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: -416px -859px
+}
+
+.wrap_item1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 5px;
+    margin-left: -5px;
+    width: 293px;
+    height: 69px;
+    text-indent: -99em;
+    overflow: hidden;
+    z-index: 9;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: -416px -859px
+}
+
+.download-list {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    left: 0px;
+    top: 580px;
+    width: 100%;
+    height: 190px;
+    text-align: center;
+    border-top: 1px solid #666;
+
+}
+
+.download-list a {
+    float: left;
+    width: 110px;
+    height: 160px;
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 40px;
+
+
+}
+
+.home {
+
+    opacity: 1 !important;
+    border-top: 1px solid #fff;
+}
+
+.current {
+    opacity: 1 !important;
+}
+
+.download-list .pc {
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: -366px -940px;
+
+    opacity: 0.4;
+
+}
+
+.download-list .mac {
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: -244px -940px;
+    opacity: 0.4;
+}
+
+.download-list .iphone {
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: -122px -940px;
+    opacity: 0.4;
+}
+
+.download-list .android {
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: 0 -940px;
+    opacity: 0.4;
+}
+
+.icon_arrow {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    margin-left: -18px;
+    width: 36px;
+    height: 20px;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: -1091px -161px;
+    z-index: 9;
+    animation: down 1.5s ease infinite;
+}
+
+.part_singer {
+    /* display: none; */
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.active {
+    z-index: 2;
+}
+
+.part_singer__tit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -283px;
+    margin-top: -100px;
+    width: 566px;
+    height: 74px;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: -556px -630px;
+
+    z-index: 2;
+}
+
+/* .part_singer .section__inner { */
+.section__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin: -90px -960px; */
+    width: 1920px;
+    height: 1069px;
+    overflow: hidden;
+}
+
+.part_singer__item {
+    width: 211px;
+    height: 211px;
+    position: relative;
+    float: left;
+    background-color: #000;
+}
+
+
+.part_singer__pic1,
+.part_singer__pic10,
+.part_singer__pic11,
+.part_singer__pic14,
+.part_singer__pic15,
+.part_singer__pic16,
+.part_singer__pic18,
+.part_singer__pic2,
+.part_singer__pic22,
+.part_singer__pic3,
+.part_singer__pic4,
+.part_singer__pic5,
+.part_singer__pic6,
+.part_singer__pic7,
+.part_singer__pic8,
+.part_singer__pic9,
+.part_singer__pic23,
+.part_singer__pic24,
+.part_singer__pic26,
+.part_singer__pic27,
+.part_singer__pic28 {
+    background: url(../images/sprite2.jpg) no-repeat;
+}
+
+.part_singer__pic29,
+.part_singer__pic31,
+.part_singer__pic33,
+.part_singer__pic34,
+.part_singer__pic36,
+.part_singer__pic36,
+.part_singer__pic37,
+.part_singer__pic38,
+.part_singer__pic39,
+.part_singer__pic40,
+.part_singer__pic41,
+.part_singer__pic42,
+.part_singer__pic43,
+.part_singer__pic44,
+.part_singer__pic45 {
+    background: url(../images/sprite2.jpg) no-repeat;
+}
+
+.part_singer__pic {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 211px;
+}
+
+.hide {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -99em;
+    display: block;
+}
+
+.part_singer__desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 0;
+    margin-left: -202px;
+    width: 404px;
+    height: 69px;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: 0 -859px;
+    z-index: 2;
+}
+
+/* 第二个 */
+.part_lyric {
+    /* display: none; */
+    width: 100%;
+    height: 900px;
+    background: url(../images/bg_lyric.jpg) 50% no-repeat;
+    background-size: cover;
+}
+
+.section {
+    overflow: hidden;
+    position: relative;
+}
+
+.part_lyric__bg1,
+.part_lyric__bg2,
+.part_lyric__bg3 {
+    display: none;
+}
+
+.part_lyric__bg1 {
+    /* display: none; */
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(../images/bg_lyric1_ie.jpg);
+}
+
+.part_lyric__bg2 {
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(../images/bg_lyric2_ie.jpg);
+}
+
+.part_lyric__bg3 {
+    width: 100%;
+    height: 376px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(../images/bg_lyric3_ie.jpg);
+}
+
+.part_lyric__tit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -504px;
+    margin-top: -130px;
+    width: 554px;
+    height: 149px;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: 0 -469px;
+    z-index: 2;
+}
+
+.part_lyric__desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -504px;
+    margin-top: 50px;
+    width: 468px;
+    height: 69px;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: -636px -493px;
+    z-index: 2;
+}
+
+.part_lyric__phone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 50px;
+    margin-top: -430px;
+    width: 580px;
+    height: 892px;
+
+}
+
+.lyric_phone {
+    display: none;
+    position: absolute;
+    top: 138px;
+    left: 99px;
+    width: 350px;
+    height: 604px;
+    background: url(../images/lyric_phone1.jpg);
+    -webkit-transform: rotate(7.5deg);
+    transform: rotate(7.5deg);
+}
+
+.lyric_phone2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 604px;
+    background: url(../images/lyric_phone2.jpg);
+}
+
+.lyric_phonebox {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 580px;
+    height: 892px;
+    background-image: url(../images/lyric_phonebox.png);
+
+
+}
+
+/* 第三个 */
+.part_like {
+    position: relative;
+    background: url(../images/bg_like.jpg) 50% no-repeat;
+    background-size: cover;
+}
+
+.section {
+    overflow: hidden;
+    position: relative;
+}
+
+/* .part_like__bg, .part_like__bg1, .part_like__bg2 {
+    display: none;
+} */
+.part_like__bg1 {
+    height: 500px;
+    /* background-image: url(../images/bg_like1_ie.jpg); */
+}
+
+.part_like__bg2 {
+    height: 567px;
+    /* background-image: url(../images/bg_like2_ie.jpg); */
+}
+
+.part_like__tit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -113px;
+    width: 615px;
+    height: 143px;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: 0 -157px;
+    z-index: 2;
+
+}
+
+.part_like__desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 68px;
+    width: 550px;
+    height: 69px;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: 0 -778px;
+    z-index: 2;
+
+}
+
+.part_like__phone {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -556px;
+    margin-top: -349px;
+    width: 520px;
+    height: 807px;
+
+}
+
+.like_phone {
+    display: none;
+    position: absolute;
+    top: 176px;
+    left: 61px;
+    width: 374px;
+    height: 500px;
+    background: url(../images/like_phone.jpg) no-repeat;
+    -webkit-transform: rotate(-5.5deg);
+    transform: rotate(-5.5deg);
+}
+
+.like_phonebox {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 778px;
+    background: url(../images/like_phonebox.png) no-repeat;
+}
+
+/* 第四个 */
+.part_synchro {
+    width: 100%;
+    height: 150%;
+    position: relative;
+    background: url(../images/bg_synchro.jpg) 50% no-repeat;
+    background-size: cover;
+}
+
+.part_synchro__tit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -580px;
+    margin-top: -270px;
+    width: 544px;
+    height: 136px;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: 0 -630px;
+    z-index: 2;
+}
+
+.part_synchro__desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -580px;
+    margin-top: -108px;
+    width: 454px;
+    height: 63px;
+    background-image: url(../images/img_index_6bc275f9.png);
+    background-position: -562px -778px;
+    z-index: 2;
+}
+
+.part_synchro__mac {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -392px;
+    width: 620px;
+    height: 784px;
+    background: url(../images/synchro_mac1.png) 0 0 no-repeat;
+    z-index: 2;
+}
+
+.part_synchro__mac2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 620px;
+    height: 376px;
+    background: url(../images/synchro_mac2.png) 0 0 no-repeat;
+}
+
+.part_synchro__phone {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: 0;
+    width: 255px;
+    height: 329px;
+    background-image: url(../images/synchro_phone.png);
+}
+
+.mod_footer {
+    height: 66px;
+    padding: 14px 0;
+    font-size: 12px;
+    font-family: Tahoma, Arial;
+    width: 100%;
+    clear: both;
+}
+
+.mod_footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    color: #fff;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#4C000000', endColorstr='#4C000000');
+    background: rgba(0, 0, 0, .3);
+    z-index: 3;
+}
+
+.mod_footer p {
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    color: #fff
+}
+
+@keyframes down {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(20%);
+        opacity: 1;
+    }
+
+    60% {
+        transform: translateY(20%);
+        opacity: 1;
+    }
+
+    90% {
+        transform: translateY(80%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}

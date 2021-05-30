@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.index_more:hover {
+    color: #22d59c
+}
+
+li {
+    list-style: none;
+}
+
+.section_inner {
+    width: 1200px;
+    height: 665px;
+    margin: 0 auto;
+}
+
+.index_hd {
+    width: 100%;
+    height: 114px;
+    padding: 50px 0 24px 0;
+    line-height: 114px;
+}
+
+.index_tit {
+    position: relative;
+    width: 196px;
+    height: 40px;
+    margin: 0 502px;
+    background: url(../images/index_inner_spirite.png);
+    background-size: 196px auto;
+    background-position: 0 -200px;
+}
+
+.index_more {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 41px;
+    height: 21px;
+    font-size: 14px;
+}
+
+.icon-xiangqing {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    font-size: 14px;
+}
+
+.top_list {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.items {
+    position: relative;
+    overflow: hidden;
+    width: 224px;
+    height: 500px;
+    text-align: center;
+}
+
+
+.toplist_item {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/list_spirite.webp);
+    transition: all .6s;
+    z-index: -1;
+}
+
+.item3 {
+    background-position: -224px 0;
+}
+
+.item4 {
+    background-position: -448px 0;
+}
+
+.item5 {
+    background-position: -672px 0;
+}
+
+.toplist_head {
+    width: 66px;
+    height: 22px;
+    margin-top: 45px;
+    margin-bottom: 9px;
+    margin-left: 80px;
+    background: url(../images/index_inner_spirite.png);
+    background-size: 196px auto;
+    background-position: 0 -300px;
+}
+
+.toplist_tit {
+    display: inline-block;
+    height: 36px;
+    line-height: 1;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.toplist_line {
+    position: absolute;
+    left: 50%;
+    top: 148px;
+    margin-left: -18px;
+    width: 36px;
+    height: 2px;
+    background: #fff;
+}
+
+.toplist_play {
+    position: absolute;
+    left: 50%;
+    top: 143px;
+    margin: -28px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/play.png);
+    background-size: 50px 50px;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .5s;
+}
+
+.items:hover .toplist_item {
+    transform: scale(1.1);
+}
+
+.items:hover .toplist_line {
+    display: none;
+}
+.items:hover .toplist_play {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.toplist__songlist {
+    width: 164px;
+    height: 220px;
+    margin: 80px auto;
+    color: #fff;
+    text-align: left;
+}
+
+.toplist_song {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 164px;
+    height: 46px;
+    padding-left: 15px;
+    margin-bottom: 27px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.song_number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+
+.toplist_song a {
+    color: #fff;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

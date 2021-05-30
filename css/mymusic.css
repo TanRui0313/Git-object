@@ -1,0 +1,71 @@
+/* .nav .download .fff:hover {
+    color: #fff;
+} */
+
+
+
+
+
+
+/* 插眼 */
+
+
+
+
+
+
+
+
+/* banner开始 */
+.banner {
+    height: 622px;
+    background: url(../images/banner.jpg) 50% no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.banner_box {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: tomato; */
+}
+
+.banner_box h2 {
+    width: 735px;
+    height: 64px;
+    margin-top: 212px;
+    background-image: url(../images/profile_tit.png);
+    background-position: 0 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner_box h2>div {
+    font-size: 0;
+}
+
+.banner_box>div {
+    width: 345px;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 36px;
+    background-image: url(../images/profile_tit.png);
+    background-position: 0 -70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner_box>a {
+    display: block;
+    font-size: 20px;
+    height: 48px;
+    line-height: 48px;
+    width: 128px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    border: 1px solid #31c27c;
+    background-color: #31c27c;
+    border-radius: 2px;
+}

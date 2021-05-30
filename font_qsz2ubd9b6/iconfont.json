@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1110588",
+      "name": "详情",
+      "font_class": "xiangqing",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "9512630",
+      "name": "客服",
+      "font_class": "service-fill",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "12706014",
+      "name": "帮助",
+      "font_class": "bangzhu",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    }
+  ]
+}
